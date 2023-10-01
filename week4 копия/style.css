@@ -1,0 +1,44 @@
+nav a {
+    font-family: Roboto, 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 23.44px;
+    color: rgba(76, 88, 102, 1);
+    text-decoration: none
+}
+a:link {
+    color: rgba(133, 133, 155, 1);
+}
+a:visited {
+    color: darkgrey;
+}
+a:hover {
+    color: black;
+}   
+#name {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #4C5866;
+}
+.title {
+font-family: Roboto, Times, serif;
+font-weight: 400;
+font-size: 18px;
+color: rgba(133, 133, 155, 1);
+}
+@font-face {
+    font-family: 'inter', sans-serif;
+    src: url("https://fonts.googleapis.com");
+}
+button {
+    width: 255px;
+    height: 70px;
+    top: 290px;
+    border: 1px;
+    padding: 20px, 50px, 20px, 50px;
+    gap: 6px;
+    color: rgba(120, 117, 254, 1);
+    border-color: rgba(120, 117, 254, 1);
+    border-style: solid;
+}

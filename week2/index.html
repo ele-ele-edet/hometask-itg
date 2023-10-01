@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+</head>
+<body>
+    <h1>Дорогие обладатели магических животных!</h1>
+    <div><h2>Сегодня мы попросим вас заполнить этот опросник о ваших любимцах.</h2></div>
+    <label for="name"></label>
+        <input type="text" placeholder="кличка питомца" id="name"/>
+    <div><label for="contacts"></label>
+        <input type="text" placeholder="Имя и контакты владельца" id="contacts" />
+    </div>
+    <div>Какое существо у вас обитает? <br>
+        <select name="bread" id="select-breed">
+        <option value="bat">Летучая мышь</option>  
+        <option value="dragon">Дракон</option>  
+        <option value="salamander">Саламандра</option>
+        </select>
+    </div>
+    <div>
+        Чем питается?<br>
+        <label for=1>сухой корм</label>
+        <input type="checkbox" id="1" />
+        <label for=2>влажный корм</label>
+        <input type="checkbox" id="2" />
+        <label for=3>натуральный корм</label>
+        <input type="checkbox" id="3" />
+    </div>
+    <div>Выберите, пожалуйста, пол вашего животного (самец - m, самка - f)<br>
+        <label for="m">m</label>
+        <input type="radio" name="sex" id="m"/>
+        <label for="f">f</label>
+        <input type="radio" name="sex" id="f"/>
+    </div>
+    <div>Оставьте комментарий, если это необходимо <br>
+        <textarea name="комментарий" cols="30" rows="10"></textarea>
+    </div>
+    Приложите фото питомца
+    <div>
+        <input type="file" />
+    </div>
+    <br>
+	<div>
+        <input type="submit" value="Сохранить">
+	</div>
+</body>
+</html>
