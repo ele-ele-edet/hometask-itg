@@ -1,0 +1,65 @@
+header {
+    background-color: lightgrey;
+    text-align: center;
+    padding: 1em;
+}
+main.yog {
+    display: flex;
+    flex: 1;
+    text-align: center;
+}
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 5;
+    background-color: lightyellow;
+    flex-direction: column;
+    padding: 1ex;
+    gap: 1ex;
+    }
+article > main {
+    flex: 1;
+}
+article > footer {
+    background: pink;
+    padding: 3em;
+}
+article > section {
+    flex: 1;
+    }
+article > div {
+    display: flex;
+    gap: 1ex;
+}
+article > div > section {
+    flex: 1;
+    gap: 1ex;
+    background: pink;
+    padding: 3em;
+}
+aside {
+    flex-grow: 2;
+    background: lightgreen;
+}
+footer.end {
+    display: flex;
+    background-color: lightgrey;
+    justify-content: space-around;
+}
+footer > section {
+    background-color: white;
+    height: 12ex;
+    padding: 1em;
+}
+html,
+body,
+div.all {
+    height: 100%;
+}
+
+.all {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+}

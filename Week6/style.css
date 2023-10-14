@@ -1,0 +1,38 @@
+header,
+nav,
+main,
+footer,
+section {
+display: flex;
+}
+body {
+image: url(images/IMAGE.png);
+background-size: cover;
+}
+nav {
+font-family: Cardo;
+font-size: 17px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+justify-content: flex-start;
+
+padding: 5px;
+}
+main {
+    justify-content: center;
+color:rgba(255, 255, 255, 1);
+font-family: Roboto;
+font-size: 27px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0.20000000298023224px;
+text-align: center;
+}
+header {
+    justify-content: center;
+}
+footer {
+    align-items: center;
+}

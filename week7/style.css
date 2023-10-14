@@ -1,0 +1,34 @@
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+    text-align: center;
+    padding: 20px auto;
+    color: white;
+    font-size: 10vw;
+  }
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#f {
+    background-color: rgb(246, 234, 103);
+}
+#s {
+    background-color: palegreen;
+}
+#t {
+    background-color: lightblue;
+}
+#fr {
+    background-color: pink;
+}
+#fv {
+    background-color: lightseagreen;
+}
+#sx {
+    background-color: peachpuff;
+}
