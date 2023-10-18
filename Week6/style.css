@@ -1,38 +1,92 @@
-header,
-nav,
-main,
-footer,
-section {
-display: flex;
+div {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
-body {
-image: url(images/IMAGE.png);
-background-size: cover;
-}
-nav {
-font-family: Cardo;
-font-size: 17px;
-font-weight: 400;
-line-height: 23px;
-letter-spacing: 0em;
-text-align: center;
-justify-content: flex-start;
 
-padding: 5px;
+img {
+    max-width: 100%;
+    max-height: 100vh;
+    height: auto;
 }
+
+nav {
+    display: flex;
+    font-family: Cardo;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+nav>a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.basic>div {
+    position: absolute;
+    bottom: 3px;
+    left: 3em;
+    font-family: Palatino Linotype;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 1em;
+    width: 324px;
+    height: 50px;
+    border-radius: 1px, 1px, 0px, 0px;
+    background: rgba(5, 5, 5, 1);
+}
+
 main {
-    justify-content: center;
-color:rgba(255, 255, 255, 1);
-font-family: Roboto;
-font-size: 27px;
-font-weight: 700;
-line-height: 38px;
-letter-spacing: 0.20000000298023224px;
-text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.20000000298023224px;
 }
-header {
+
+.text-ex-image {
+    font-family: Roboto;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    display: flex;
     justify-content: center;
-}
-footer {
     align-items: center;
+}
+
+.basic {
+    position: relative;
+}
+
+.basic>button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+footer>p {
+    padding-left: 10px;
+    padding-right: 10%;
 }
