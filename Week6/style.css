@@ -27,21 +27,22 @@ nav>a {
     color: black;
 }
 
-.basic>div {
+.question {
     position: absolute;
     bottom: 3px;
     left: 3em;
     font-family: Palatino Linotype;
-    font-size: 15px;
+    font-size: clamp(0.5rem, 2.5vw, 0.9rem);
+    ;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
-    padding-top: 1em;
-    width: 324px;
-    height: 50px;
+    padding: 0.3rem;
+    width: 280px;
+    height: 25px;
     border-radius: 1px, 1px, 0px, 0px;
-    background: rgba(5, 5, 5, 1);
+    background-color: black;
 }
 
 main {
@@ -54,26 +55,39 @@ main {
 }
 
 .text-ex-image {
-    font-family: Roboto;
-    font-size: 27px;
-    font-weight: 700;
-    line-height: 38px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.basic {
-    position: relative;
-}
-
-.basic>button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    height: auto;
+    width: 60%;
+    text-align: center;
+}
+
+span {
+    font-family: Roboto, sans-serif;
+    font-size: clamp(0.8rem, 2.5vw, 2rem);
+    font-weight: 700;
+    line-height: 2.9rem;
+    letter-spacing: 0.2px;
+    text-align: center;
+    display: block;
+}
+
+.basic {
+    position: relative;
+
+}
+
+.text-ex-image>button {
+    background: none;
+    color: white;
+    border: thin solid white;
+    font-family: Cardo;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: clamp(0.8rem, 2.5vw, 2rem);
 }
 
 header {
@@ -84,9 +98,23 @@ header {
 footer {
     display: flex;
     align-items: center;
+    margin: min(10vw, 20px);
 }
 
 footer>p {
     padding-left: 10px;
     padding-right: 10%;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .question {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+
 }
